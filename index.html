@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador de Treino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Temporizador de Treino</h1>
+    </header>
+    <main>
+        <label for="preparacao">Tempo de Preparação (segundos):</label>
+        <input type="number" id="preparacao" min="1" required>
+        
+        <label for="exercicio">Tempo de Exercício (segundos):</label>
+        <input type="number" id="exercicio" min="1" required>
+        
+        <label for="descanso">Tempo de Descanso (segundos):</label>
+        <input type="number" id="descanso" min="1" required>
+        
+        <label for="repeticoes">Número de Repetições:</label>
+        <input type="number" id="repeticoes" min="1" value="1" required>
+        
+        <button id="iniciar">Iniciar Temporizador</button>
+        
+        <div id="mensagem"></div>
+        <div id="temporizador" class="temporizador">00:00</div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Temporizador de Treino. Todos os direitos reservados.</p>
+    </footer>
+    <audio id="audioPreparacao" src="start.mp3"></audio>
+    <audio id="audioDescanso" src="rest.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
